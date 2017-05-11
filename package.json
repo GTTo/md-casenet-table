@@ -2,9 +2,10 @@
   "name": "md-casenet-table",
   "version": "0.0.0",
   "license": "MIT",
+  "author": "César Beviá",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4201",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -21,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
     "core-js": "^2.4.1",
+    "roboto-fontface": "^0.7.0",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
