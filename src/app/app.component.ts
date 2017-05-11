@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Material design  - Casenet table';
+  data: any[];
+
+  constructor() {
+    this.data = [
+      {name: 'Spain', capital: 'Madrid', language: 'Spanish', domain: 'es' },
+      {name: 'Czech Republic', capital: 'Prague', language: 'Czech', domain: 'cz' },
+      {name: 'France', capital: 'Paris', language: 'French', domain: 'fr' }
+    ];
+
+  }
 }

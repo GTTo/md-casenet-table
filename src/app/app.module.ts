@@ -5,11 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { CnTableComponent } from './cn-table/cn-table.component';
+import { CnTableRowComponent } from './cn-table-row/cn-table-row.component';
+import { CnTableCellComponent } from './cn-table-cell/cn-table-cell.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CnTableComponent
+    CnTableComponent,
+    CnTableRowComponent
   ],
   imports: [
     BrowserModule,
