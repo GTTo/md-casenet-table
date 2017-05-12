@@ -1,5 +1,5 @@
 <div class="cn-table">
   <cn-header-row [data]="columns"></cn-header-row>
   <cn-row *ngFor="let row of data" [row]="row"></cn-row>
-  <div>footer</div>
+  <cn-footer-row [total]="data.length"></cn-footer-row>
 </div>

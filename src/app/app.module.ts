@@ -8,6 +8,7 @@ import { CnTableComponent } from './cn-table/cn-table.component';
 import { CnRowComponent } from './cn-row/cn-row.component';
 import { CnCellComponent } from './cn-cell/cn-cell.component';
 import { CnHeaderRowComponent } from './cn-header-row/cn-header-row.component';
+import { CnFooterRowComponent } from './cn-footer-row/cn-footer-row.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CnHeaderRowComponent } from './cn-header-row/cn-header-row.component';
     CnTableComponent,
     CnRowComponent,
     CnCellComponent,
-    CnHeaderRowComponent
+    CnHeaderRowComponent,
+    CnFooterRowComponent
   ],
   imports: [
     BrowserModule,
