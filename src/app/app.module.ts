@@ -5,15 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { CnTableComponent } from './cn-table/cn-table.component';
-import { CnTableRowComponent } from './cn-table-row/cn-table-row.component';
-import { CnTableCellComponent } from './cn-table-cell/cn-table-cell.component';
+import { CnRowComponent } from './cn-row/cn-row.component';
+import { CnCellComponent } from './cn-cell/cn-cell.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CnTableComponent,
-    CnTableRowComponent,
-    CnTableCellComponent
+    CnRowComponent,
+    CnCellComponent
   ],
   imports: [
     BrowserModule,

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CnTableRowComponent } from './cn-table-row.component';
+import { CnRowComponent } from './cn-row.component';
 
-describe('CnTableRowComponent', () => {
-  let component: CnTableRowComponent;
-  let fixture: ComponentFixture<CnTableRowComponent>;
+describe('CnRowComponent', () => {
+  let component: CnRowComponent;
+  let fixture: ComponentFixture<CnRowComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CnTableRowComponent ]
+      declarations: [ CnRowComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CnTableRowComponent);
+    fixture = TestBed.createComponent(CnRowComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

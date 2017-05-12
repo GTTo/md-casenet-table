@@ -1,11 +1,11 @@
 import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'cn-table-row',
-  templateUrl: './cn-table-row.component.html',
-  styleUrls: ['./cn-table-row.component.scss']
+  selector: 'cn-row',
+  templateUrl: './cn-row.component.html',
+  styleUrls: ['./cn-row.component.scss']
 })
-export class CnTableRowComponent implements OnInit {
+export class CnRowComponent implements OnInit {
 
   @Input() row: any;
 
