@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { CnTableComponent } from './cn-table/cn-table.component';
 import { CnRowComponent } from './cn-row/cn-row.component';
 import { CnCellComponent } from './cn-cell/cn-cell.component';
+import { CnHeaderRowComponent } from './cn-header-row/cn-header-row.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CnTableComponent,
     CnRowComponent,
-    CnCellComponent
+    CnCellComponent,
+    CnHeaderRowComponent
   ],
   imports: [
     BrowserModule,

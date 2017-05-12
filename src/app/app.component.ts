@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Material design  - Casenet table';
   data: any[];
+  columns: String[];
 
   constructor() {
     this.data = [
@@ -16,5 +17,6 @@ export class AppComponent {
       {name: 'France', capital: 'Paris', language: 'French', domain: 'fr' }
     ];
 
+    this.columns = ['Name', 'Capital city', 'Language', 'Internet domain'];
   }
 }

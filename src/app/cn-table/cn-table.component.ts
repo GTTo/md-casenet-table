@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class CnTableComponent implements OnInit {
 
   @Input() data: any[];
+  @Input() columns: String[];
 
   constructor() { }
 
