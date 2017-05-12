@@ -3,7 +3,7 @@ import {Component, Input, OnInit} from '@angular/core';
 @Component({
   selector: 'cn-table-row',
   templateUrl: './cn-table-row.component.html',
-  styleUrls: ['./cn-table-row.component.css']
+  styleUrls: ['./cn-table-row.component.scss']
 })
 export class CnTableRowComponent implements OnInit {
 
@@ -14,4 +14,7 @@ export class CnTableRowComponent implements OnInit {
   ngOnInit() {
   }
 
+  getFields(): String[] {
+    return Object.keys(this.row);
+  }
 }

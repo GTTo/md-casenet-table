@@ -12,7 +12,8 @@ import { CnTableCellComponent } from './cn-table-cell/cn-table-cell.component';
   declarations: [
     AppComponent,
     CnTableComponent,
-    CnTableRowComponent
+    CnTableRowComponent,
+    CnTableCellComponent
   ],
   imports: [
     BrowserModule,
