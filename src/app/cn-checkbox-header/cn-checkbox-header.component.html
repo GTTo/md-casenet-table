@@ -1,1 +1,1 @@
-<md-checkbox [(ngModel)]="checked" [disableRipple]="true"></md-checkbox>
+<md-checkbox [(ngModel)]="checked" [indeterminate]="indeterminate"  (change)="checkboxChanged($event)"></md-checkbox>

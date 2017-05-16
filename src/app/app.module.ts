@@ -13,6 +13,7 @@ import { CnFooterRowComponent } from './cn-footer-row/cn-footer-row.component';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { CnCheckboxCellComponent } from './cn-checkbox-cell/cn-checkbox-cell.component';
 import { CnCheckboxHeaderComponent } from './cn-checkbox-header/cn-checkbox-header.component';
+import {SelectionService} from './services/selection.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { CnCheckboxHeaderComponent } from './cn-checkbox-header/cn-checkbox-head
     MdIconModule,
     NoopAnimationsModule
   ],
-  providers: [],
+  providers: [
+    SelectionService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,7 +7,8 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class CnHeaderRowComponent implements OnInit {
 
-  @Input() data: String[];
+  @Input() columns: String[];
+  @Input() rows: any[];
 
   constructor() { }
 

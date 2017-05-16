@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {MdCheckboxChange} from "@angular/material";
+import {SelectionService} from "../services/selection.service";
 
 @Component({
   selector: 'cn-checkbox-header',
@@ -7,11 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CnCheckboxHeaderComponent implements OnInit {
 
+  @Input() rows: any[];
   checked = false;
+  indeterminate: boolean;
 
-  constructor() { }
+  constructor(private selectionService: SelectionService) { }
 
   ngOnInit() {
   }
 
+  checkboxChanged(event: MdCheckboxChange): void {
+    if (event.checked) {
+      this.selectionService.addAllSelectedRows(this.rows);
+    } else {
+      this.selectionService.removeAllSelected();
+    }
+  }
 }
