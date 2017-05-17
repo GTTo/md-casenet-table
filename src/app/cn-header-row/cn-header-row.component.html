@@ -1,4 +1,12 @@
 <cn-checkbox-header [rows]="rows"></cn-checkbox-header>
-<cn-cell *ngFor="let field of columns">
+<cn-cell *ngFor="let field of columns" (click)="sortColumn(field)">
   <span [mdTooltip]="field.tooltip" mdTooltipPosition="after" >{{field.title}}</span>
+  <span [ngSwitch]="field.orderDir">
+    <span *ngSwitchCase="cnOrderDirectionEnum.ASC">
+      <i class="material-icons md-18">keyboard_arrow_up</i>
+    </span>
+    <span *ngSwitchCase="cnOrderDirectionEnum.DESC">
+      <i class="material-icons md-18">keyboard_arrow_down</i>
+    </span>
+  </span>
 </cn-cell>
