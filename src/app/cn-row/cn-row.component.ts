@@ -20,7 +20,6 @@ export class CnRowComponent implements OnInit {
     this.columns.forEach((column) => {
       fields.push(column.name);
     });
-  console.log(fields);
     return fields;
   }
 }

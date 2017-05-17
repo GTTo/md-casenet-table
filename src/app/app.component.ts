@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Material design  - Casenet table';
   rows: any[];
-  columns: any[];
+  columnsList: any[];
+  columnsDetail: any[];
 
   constructor() {
     this.rows = [
@@ -17,12 +18,15 @@ export class AppComponent {
       {id: 3, name: 'France', capital: 'Paris', language: 'French', domain: 'fr', population: 56000000 }
     ];
 
-    this.columns = [
-      {name: 'id', title: 'Id', tooltip: 'Unique identificatior'},
-      {name: 'name', title: 'Name', tooltip: 'Name of the country'},
-      {name: 'capital', title: 'Capital city', tooltip: 'Main capital city of the country'},
-      {name: 'language', title: 'Language', tooltip: 'Default language spoken in country'},
-      {name: 'domain', title: 'Internet domain', tooltip: 'The ICAAN domain for the country'}
-    ];
+    const columnID = {name: 'id', title: 'Id', tooltip: 'Unique identificatior'};
+    const columnName = {name: 'name', title: 'Name', tooltip: 'Name of the country'};
+    const columnCapital = {name: 'capital', title: 'Capital city', tooltip: 'Main capital city of the country'};
+    const columnLanguage = {name: 'language', title: 'Language', tooltip: 'Default language spoken in country'};
+    const columnDomain = {name: 'domain', title: 'Internet domain', tooltip: 'The ICAAN domain for the country'};
+    const columnPopulation = {name: 'population', title: 'Population', tooltip: 'Population this year'};
+
+    this.columnsList = [columnName, columnCapital, columnLanguage, columnDomain];
+    // TODO: define a detailed view
+    this.columnsDetail = [columnID, columnName, columnCapital, columnLanguage, columnDomain, columnPopulation];
   }
 }
