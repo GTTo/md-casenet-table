@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import {MdCheckboxModule, MdIconModule} from '@angular/material';
+import {MdCheckboxModule, MdIconModule, MdTooltipModule} from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { CnTableComponent } from './cn-table/cn-table.component';
@@ -32,6 +32,7 @@ import {SelectionService} from './services/selection.service';
     HttpModule,
     MdCheckboxModule,
     MdIconModule,
+    MdTooltipModule,
     NoopAnimationsModule
   ],
   providers: [

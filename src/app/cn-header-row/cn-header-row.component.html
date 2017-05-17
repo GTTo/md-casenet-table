@@ -1,4 +1,4 @@
 <cn-checkbox-header [rows]="rows"></cn-checkbox-header>
 <cn-cell *ngFor="let field of columns">
-  {{field['title']}}
+  <span [mdTooltip]="field.tooltip" mdTooltipPosition="after" >{{field.title}}</span>
 </cn-cell>
