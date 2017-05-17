@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class CnRowComponent implements OnInit {
 
   @Input() row: any;
+  @Input() columns: any[];
 
   constructor() { }
 
@@ -15,6 +16,11 @@ export class CnRowComponent implements OnInit {
   }
 
   getFields(): String[] {
-    return Object.keys(this.row);
+    const fields = [];
+    this.columns.forEach((column) => {
+      fields.push(column.name);
+    });
+  console.log(fields);
+    return fields;
   }
 }
