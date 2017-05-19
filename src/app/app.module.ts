@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import {MdCheckboxModule, MdIconModule, MdTooltipModule} from '@angular/material';
+import {MdCheckboxModule, MdIconModule, MdSelectModule, MdTooltipModule} from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { CnTableComponent } from './cn-table/cn-table.component';
@@ -36,6 +36,7 @@ import { CnTablePaginationComponent } from './cn-table-pagination/cn-table-pagin
     HttpModule,
     MdCheckboxModule,
     MdIconModule,
+    MdSelectModule,
     MdTooltipModule,
     NoopAnimationsModule
   ],

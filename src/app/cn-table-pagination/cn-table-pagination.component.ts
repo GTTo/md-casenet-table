@@ -27,4 +27,9 @@ export class CnTablePaginationComponent implements OnInit {
   previous() {
     this.paginationService.pageDown();
   }
+
+  setPageSize(size: number) {
+    this.paginationService.setPageSize(size);
+  }
+
 }

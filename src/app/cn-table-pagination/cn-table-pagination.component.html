@@ -4,4 +4,11 @@
   <span>Page: {{paginator.currentPage}}</span>
   <span class="paginator_button" (click)="next()"><i class="material-icons">skip_next</i></span>
 </cn-cell>
-<cn-cell>Page size: {{paginator.pageSize}}</cn-cell>
+<cn-cell>
+  Page Size:
+  <md-select [(ngModel)]="paginator.pageSize" (change)="setPageSize(paginator.pageSize)" >
+    <md-option *ngFor="let pagesize of [5, 10, 25, 50]" [value]="pagesize">
+      {{pagesize}}
+    </md-option>
+  </md-select>
+</cn-cell>
