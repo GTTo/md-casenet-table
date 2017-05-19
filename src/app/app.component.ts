@@ -15,13 +15,18 @@ export class AppComponent {
 
   constructor() {
     this.rows = [
-      {id: 1, name: 'Spain', capital: 'Madrid', language: 'Spanish', domain: 'es' , population: 42000000},
-      {id: 2, name: 'Czech Republic', capital: 'Prague', language: 'Czech', domain: 'cz', population: 35000000 },
-      {id: 3, name: 'France', capital: 'Paris', language: 'French', domain: 'fr', population: 56000000 }
+      {id: 1, name: 'Spain', capital: 'Madrid', language: 'Spanish', domain: 'es' , population: 46423064},
+      {id: 2, name: 'Czech Republic', capital: 'Prague', language: 'Czech', domain: 'cz', population: 10553948 },
+      {id: 3, name: 'France', capital: 'Paris', language: 'French', domain: 'fr', population: 67000000 },
+      {id: 4, name: 'USA', capital: 'Washington D. C.', language: 'English', domain: 'us', population: 324992000 },
+      {id: 5, name: 'Germany', capital: 'Berlin', language: 'German', domain: 'de', population: 82175700 },
+      {id: 6, name: 'Portugal', capital: 'Lisbon', language: 'Portuguese', domain: 'pt', population: 10341330 },
+      {id: 7, name: 'Italy', capital: 'Rome', language: 'Italian', domain: 'it', population: 60674003 },
+      {id: 8, name: 'Ukraine', capital: 'Kiev', language: 'Ukrainian', domain: 'ua', population: 42541633 },
     ];
 
     const columnID: ICnTableColumn = {
-      name: 'id', title: 'Id', tooltip: 'Unique identificatior', orderDir: CnOrderDirectionEnum.NONE
+      name: 'id', title: 'Id', tooltip: 'Unique identification', orderDir: CnOrderDirectionEnum.NONE
     };
     const columnName: ICnTableColumn = {
       name: 'name', title: 'Name', tooltip: 'Name of the country', orderDir: CnOrderDirectionEnum.NONE

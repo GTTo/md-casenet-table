@@ -14,6 +14,7 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { CnCheckboxCellComponent } from './cn-checkbox-cell/cn-checkbox-cell.component';
 import { CnCheckboxHeaderComponent } from './cn-checkbox-header/cn-checkbox-header.component';
 import {SelectionService} from './services/selection.service';
+import {SortService} from './services/sort.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {SelectionService} from './services/selection.service';
     NoopAnimationsModule
   ],
   providers: [
-    SelectionService
+    SelectionService,
+    SortService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,4 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnDestroy, OnInit} from '@angular/core';
+import {Subscription} from 'rxjs/Subscription';
+import {SortService} from '../services/sort.service';
 
 
 export enum CnOrderDirectionEnum {
@@ -19,14 +21,23 @@ export interface ICnTableColumn {
   templateUrl: './cn-table.component.html',
   styleUrls: ['./cn-table.component.scss']
 })
-export class CnTableComponent implements OnInit {
+export class CnTableComponent implements OnInit, OnDestroy {
 
   @Input() rows: any[];
   @Input() columns: any[];
+  sub: Subscription;
 
-  constructor() { }
+  constructor(private sortService: SortService) {
+    this.sub = this.sortService.$sort.subscribe((field) => {
+      this.sortService.sortRows(this.rows);
+    });
+  }
 
   ngOnInit() {
+  }
+
+  ngOnDestroy(): void {
+    this.sub.unsubscribe();
   }
 
 }

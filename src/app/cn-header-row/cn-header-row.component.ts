@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {CnOrderDirectionEnum} from '../cn-table/cn-table.component';
+import {SortService} from '../services/sort.service';
 
 @Component({
   selector: 'cn-header-row',
@@ -11,22 +12,13 @@ export class CnHeaderRowComponent implements OnInit {
   @Input() columns: any[];
   @Input() rows: any[];
   cnOrderDirectionEnum = CnOrderDirectionEnum; // hack to allow use of enums in templates
-  constructor() { }
+  constructor(private sortService: SortService) { }
 
   ngOnInit() {
   }
 
   sortColumn(field: any) {
-    console.log('SORT: ' + field.orderDir);
-    switch (field.orderDir) {
-      case CnOrderDirectionEnum.ASC:
-        field.orderDir = CnOrderDirectionEnum.DESC;
-        break;
-      case CnOrderDirectionEnum.DESC:
-        field.orderDir = CnOrderDirectionEnum.NONE;
-        break;
-      default:
-        field.orderDir = CnOrderDirectionEnum.ASC;
-    }
+    this.sortService.sortColumn(field);
   }
+
 }
