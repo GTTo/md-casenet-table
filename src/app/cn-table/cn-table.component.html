@@ -1,5 +1,5 @@
 <div class="cn-table">
   <cn-header-row [columns]="columns" [rows]="rows"></cn-header-row>
-  <cn-row *ngFor="let row of rows" [columns]="columns" [row]="row"></cn-row>
-  <cn-footer-row [total]="rows.length"></cn-footer-row>
+  <cn-row *ngFor="let row of rows  | slice:offset:to" [columns]="columns" [row]="row"></cn-row>
+  <cn-footer-row [rows]="rows"></cn-footer-row>
 </div>

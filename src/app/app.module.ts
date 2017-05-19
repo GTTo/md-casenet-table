@@ -15,6 +15,8 @@ import { CnCheckboxCellComponent } from './cn-checkbox-cell/cn-checkbox-cell.com
 import { CnCheckboxHeaderComponent } from './cn-checkbox-header/cn-checkbox-header.component';
 import {SelectionService} from './services/selection.service';
 import {SortService} from './services/sort.service';
+import {PaginationService} from './services/pagination.service';
+import { CnTablePaginationComponent } from './cn-table-pagination/cn-table-pagination.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import {SortService} from './services/sort.service';
     CnHeaderRowComponent,
     CnFooterRowComponent,
     CnCheckboxCellComponent,
-    CnCheckboxHeaderComponent
+    CnCheckboxHeaderComponent,
+    CnTablePaginationComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import {SortService} from './services/sort.service';
   ],
   providers: [
     SelectionService,
-    SortService
+    SortService,
+    PaginationService
   ],
   bootstrap: [AppComponent]
 })

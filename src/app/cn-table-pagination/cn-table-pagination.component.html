@@ -1,0 +1,7 @@
+<cn-cell>Showing from {{paginator.offset + 1}} to {{paginator.offset + paginator.pageSize}}</cn-cell>
+<cn-cell>
+  <span class="paginator_button" (click)="previous()"><i class="material-icons">skip_previous</i></span>
+  <span>Page: {{paginator.currentPage}}</span>
+  <span class="paginator_button" (click)="next()"><i class="material-icons">skip_next</i></span>
+</cn-cell>
+<cn-cell>Page size: {{paginator.pageSize}}</cn-cell>

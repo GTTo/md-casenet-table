@@ -7,11 +7,14 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class CnFooterRowComponent implements OnInit {
 
-  @Input() total: number;
+  @Input() rows: any[];
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  getAllRowCount(): number {
+    return this.rows.length;
+  }
 }
