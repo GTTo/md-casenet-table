@@ -23,6 +23,7 @@ export class AppComponent {
       {id: 6, name: 'Portugal', capital: 'Lisbon', language: 'Portuguese', domain: 'pt', population: 10341330 },
       {id: 7, name: 'Italy', capital: 'Rome', language: 'Italian', domain: 'it', population: 60674003 },
       {id: 8, name: 'Ukraine', capital: 'Kiev', language: 'Ukrainian', domain: 'ua', population: 42541633 },
+      {id: 9, name: 'United Kingdom', capital: 'London', language: 'English', domain: 'uk', population: 65110000 },
     ];
 
     const columnID: ICnTableColumn = {
