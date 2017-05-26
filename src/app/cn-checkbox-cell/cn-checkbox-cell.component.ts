@@ -28,7 +28,6 @@ export class CnCheckboxCellComponent implements OnInit, OnDestroy {
   }
 
   checkboxChanged(event: MdCheckboxChange): void {
-    console.log('event change checkbox ' + this.data);
     this.checked = event.checked;
     if (this.checked) {
       this.selectionService.addSelectedRow(this.data);

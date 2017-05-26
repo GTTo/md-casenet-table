@@ -19,7 +19,9 @@ export class SelectionService {
   }
 
   removeSelectedRow(row: any) {
-    const indexToRemove = this.selection.findIndex(obj => obj.id = row.id);
+    const indexToRemove = this.selection.findIndex(obj => obj.id === row.id);
+    if (indexToRemove === -1) { return; }
+
     this.selection.splice(indexToRemove, 1);
     this.$selection.emit(this.selection); // It emits an event with the selection array after remove the element
   }
