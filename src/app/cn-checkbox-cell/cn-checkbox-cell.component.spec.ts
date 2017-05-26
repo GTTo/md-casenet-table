@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CnCheckboxCellComponent } from './cn-checkbox-cell.component';
+import {MdCheckboxModule} from '@angular/material';
+import {SelectionService} from '../services/selection.service';
 
 describe('CnCheckboxCellComponent', () => {
   let component: CnCheckboxCellComponent;
@@ -8,7 +10,9 @@ describe('CnCheckboxCellComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CnCheckboxCellComponent ]
+      declarations: [ CnCheckboxCellComponent ],
+      imports: [MdCheckboxModule],
+      providers: [SelectionService]
     })
     .compileComponents();
   }));

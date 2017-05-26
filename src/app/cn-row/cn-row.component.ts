@@ -16,6 +16,10 @@ export class CnRowComponent implements OnInit {
   }
 
   getFields(): String[] {
+    if (!this.columns) {
+      return [];
+    }
+
     const fields = [];
     this.columns.forEach((column) => {
       fields.push(column.name);

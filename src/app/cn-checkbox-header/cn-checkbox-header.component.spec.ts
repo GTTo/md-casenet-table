@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CnCheckboxHeaderComponent } from './cn-checkbox-header.component';
+import {MdCheckboxModule} from '@angular/material';
+import {SelectionService} from '../services/selection.service';
 
 describe('CnCheckboxHeaderComponent', () => {
   let component: CnCheckboxHeaderComponent;
@@ -8,7 +10,9 @@ describe('CnCheckboxHeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CnCheckboxHeaderComponent ]
+      declarations: [ CnCheckboxHeaderComponent ],
+      imports: [MdCheckboxModule],
+      providers: [SelectionService]
     })
     .compileComponents();
   }));

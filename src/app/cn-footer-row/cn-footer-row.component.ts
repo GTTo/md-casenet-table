@@ -15,6 +15,6 @@ export class CnFooterRowComponent implements OnInit {
   }
 
   getAllRowCount(): number {
-    return this.rows.length;
+    return this.rows ? this.rows.length : 0;
   }
 }
